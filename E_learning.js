@@ -61,6 +61,8 @@ const javaQuiz = [
 
 
 
+
+
 let currentQuiz = pythonQuiz; // Default to Python quiz
 let currentQuestionIndex = 0;
 let correctAnswers = 0;
@@ -73,7 +75,10 @@ function loadQuiz(category) {
     currentQuiz = pythonQuiz;
   } else if (category === "java") {
     currentQuiz = javaQuiz;
+  } else if (category === "Datascience") {
+    currentQuiz = Datascience;
   }
+
 
   currentQuestionIndex = 0;
   correctAnswers = 0;
